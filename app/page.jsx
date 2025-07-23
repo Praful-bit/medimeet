@@ -1,3 +1,4 @@
+import Pricing from "@/components/pricing";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -96,7 +97,7 @@ export default function Home() {
       <section className="py-20 ">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <Badge className="bg-emerald-900/30 border-emerald-700/30 px-2 py-2 text-emerald-400 text-sm font-medium">
+            <Badge className="bg-emerald-900/30 border-emerald-700/30 px-2 py-2 text-emerald-400 text-sm font-medium mb-4">
               Affordable Healthcare
             </Badge>
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
@@ -109,6 +110,7 @@ export default function Home() {
           </div>
           <div>
             {/* pricing table */}
+            <Pricing/>
             <Card className="mt-12 bg-muted/20 border-emerald-900/30">
               <CardHeader>
                 <CardTitle className="text-xl font-semibold text-white flex items-center">
